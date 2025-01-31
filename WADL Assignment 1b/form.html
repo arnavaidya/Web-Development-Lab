@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form id="registrationForm" onsubmit="return validateForm(event)">
+            <table>
+                <tr>
+                    <td>First name:</td>
+                    <td>
+                        <input type="text" placeholder="First Name" name="firstName" id="firstName" required>
+                        <span class="error" id="firstNameError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Middle name:</td>
+                    <td>
+                        <input type="text" placeholder="Middle Name" name="middleName" id="middleName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last name:</td>
+                    <td>
+                        <input type="text" placeholder="Last Name" name="lastName" id="lastName" required>
+                        <span class="error" id="lastNameError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone-Number:</td>
+                    <td>
+                        <input type="tel" placeholder="10-digit Phone" name="phone" id="phone" required>
+                        <span class="error" id="phoneError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email-Id:</td>
+                    <td>
+                        <input type="email" placeholder="example@xyz.com" name="email" id="email" required>
+                        <span class="error" id="emailError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male" required>Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="other">Other
+                        <span class="error" id="genderError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td>
+                        <input type="date" name="dob" id="dob" required>
+                        <span class="error" id="dobError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td>
+                        <select name="city" id="city" required>
+                            <option value=""> ---Select--- </option>
+                            <option value="Ahmednagar">Ahmednagar</option>
+                            <option value="Akola">Akola</option>
+                            <option value="Amravati">Amravati</option>
+                            <option value="Aurangabad">Aurangabad</option>
+                            <option value="Bhiwandi">Bhiwandi</option>
+                            <option value="Chandrapur">Chandrapur</option>
+                            <option value="Dhule">Dhule</option>
+                            <option value="Kolhapur">Kolhapur</option>
+                            <option value="Latur">Latur</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Nashik">Nashik</option>
+                            <option value="Navi Mumbai">Navi Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Solapur">Solapur</option>
+                            <option value="Thane">Thane</option>
+                            <option value="Vasai-Virar">Vasai-Virar</option>
+                        </select>
+                        <span class="error" id="cityError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center">
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
