@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1>Registration Form</h1>
-        <form id="registrationForm" onsubmit="return validateForm(event)">
+        <form id="registrationForm" onsubmit="return handleRegistration(event)">
             <table>
                 <tr>
                     <td>First name:</td>
@@ -29,17 +29,17 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Phone-Number:</td>
-                    <td>
-                        <input type="tel" placeholder="10-digit Phone" name="phone" id="phone" required>
-                        <span class="error" id="phoneError"></span>
-                    </td>
-                </tr>
-                <tr>
                     <td>Email-Id:</td>
                     <td>
                         <input type="email" placeholder="example@xyz.com" name="email" id="email" required>
                         <span class="error" id="emailError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone-Number:</td>
+                    <td>
+                        <input type="tel" placeholder="10-digit Phone" name="phone" id="phone" required>
+                        <span class="error" id="phoneError"></span>
                     </td>
                 </tr>
                 <tr>
@@ -49,13 +49,6 @@
                         <input type="radio" name="gender" value="female">Female
                         <input type="radio" name="gender" value="other">Other
                         <span class="error" id="genderError"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Date of Birth:</td>
-                    <td>
-                        <input type="date" name="dob" id="dob" required>
-                        <span class="error" id="dobError"></span>
                     </td>
                 </tr>
                 <tr>
@@ -85,12 +78,22 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>Hobbies:</td>
+                    <td>
+                        <label><input type="checkbox" name="hobby" value="reading"> Reading</label><br>
+                        <label><input type="checkbox" name="hobby" value="traveling"> Traveling</label><br>
+                        <label><input type="checkbox" name="hobby" value="gaming"> Gaming</label><br>
+                        <label><input type="checkbox" name="hobby" value="sports"> Sports</label><br>
+                        <label><input type="checkbox" name="hobby" value="music"> Music</label><br>
+                    </td>
+                </tr>
+                <tr>
                     <td colspan="2" style="text-align: center">
                         <button type="submit">Submit</button>
                     </td>
                 </tr>
             </table>
         </form>
-        <script src="script.js"></script>
+        <script src="userManagement.js"></script>
     </body>
 </html>
