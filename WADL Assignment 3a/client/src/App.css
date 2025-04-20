@@ -1,0 +1,147 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  transition: background-color 0.3s ease;
+}
+
+.app-container.dark {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-container.dark .navbar {
+  background-color: #111827;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+.app-container.dark .navbar-brand {
+  color: #60a5fa;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.app-container.dark .navbar-links a {
+  color: #d1d5db;
+}
+
+.navbar-links a:hover {
+  color: #3b82f6;
+}
+
+.theme-toggle-btn {
+  background-color: #e5e7eb;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.app-container.dark .theme-toggle-btn {
+  background-color: #374151;
+  color: #f3f4f6;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #d1d5db;
+}
+
+.app-container.dark .theme-toggle-btn:hover {
+  background-color: #4b5563;
+}
+
+/* Container and card styles */
+.container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-container.dark .card {
+  background-color: #1e293b;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  color: #111827;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.app-container.dark .title {
+  color: #f9fafb;
+}
+
+.message {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.6;
+  min-height: 3em;
+}
+
+.app-container.dark .message {
+  color: #d1d5db;
+}
+
+.fetch-button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.fetch-button:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.fetch-button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
