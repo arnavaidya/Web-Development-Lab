@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>taglio's - Roman Style Pizza</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+
+<!-- Start of first page: Home -->
+<div data-role="page" id="home" class="pizza-page">
+  <div data-role="header" class="pizza-header">
+    <h1>taglio's</h1>
+    <h2>Roman Pizza</h2>
+  </div>
+
+  <div role="main" class="ui-content">
+    <div class="content-block hero">
+      <h2>Hot, Fresh & Delicious</h2>
+      <p>Welcome to taglio's, where every pizza tells a story. Handcrafted with fresh ingredients since 1995.</p>
+      <a href="#menu" data-role="button" data-theme="b" class="order-btn">View Our Menu</a>
+    </div>
+    
+    <div class="content-block">
+      <h3>Customer Favorites</h3>
+      <ul data-role="listview" data-inset="true" class="pizza-list">
+        <li>
+          <a href="#menu">
+            <h2>Pepperoni Paradise</h2>
+            <p>Our bestseller with double pepperoni</p>
+          </a>
+        </li>
+        <li>
+          <a href="#menu">
+            <h2>Veggie Supreme</h2>
+            <p>Fresh vegetables on a thin crust</p>
+          </a>
+        </li>
+        <li>
+          <a href="#menu">
+            <h2>BBQ Chicken</h2>
+            <p>Smoky BBQ sauce with grilled chicken</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="content-block">
+      <h3>Special Offers</h3>
+      <div data-role="collapsible-set">
+        <div data-role="collapsible">
+          <h4>Buy One Get One Free - Tuesdays</h4>
+          <p>Every Tuesday, buy any large pizza and get a medium pizza free!</p>
+        </div>
+        <div data-role="collapsible">
+          <h4>Family Pack - $24.99</h4>
+          <p>One large pizza, garlic bread, and a 2-liter soda. Perfect for family nights!</p>
+        </div>
+        <div data-role="collapsible">
+          <h4>Student Special - 15% Off</h4>
+          <p>Show your student ID and get 15% off your entire order.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed" class="pizza-footer">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+        <li><a href="#menu" data-icon="grid">Menu</a></li>
+        <li><a href="#about" data-icon="info">About</a></li>
+        <li><a href="#contact" data-icon="mail">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Include other pages -->
+<div data-role="page" id="menu" class="pizza-page"></div>
+<div data-role="page" id="about" class="pizza-page"></div>
+<div data-role="page" id="contact" class="pizza-page"></div>
+
+</body>
+</html>

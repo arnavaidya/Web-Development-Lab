@@ -1,0 +1,71 @@
+<!-- Contact page content (will be loaded into #contact div) -->
+<div data-role="header" class="pizza-header">
+  <a href="#home" data-icon="back" data-rel="back">Back</a>
+  <h1>Contact & Order</h1>
+</div>
+
+<div role="main" class="ui-content">
+  <div class="content-block">
+    <h2>Place Your Order</h2>
+    <p>Call us or fill out the form below to place your order for pickup or delivery.</p>
+    
+    <a href="tel:555-123-4567" data-role="button" data-icon="phone">Call Now: 555-123-4567</a>
+    
+    <form id="orderForm">
+      <div data-role="fieldcontain">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+      </div>
+      
+      <div data-role="fieldcontain">
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Your Phone Number" required>
+      </div>
+      
+      <div data-role="fieldcontain">
+        <label for="address">Address (for delivery):</label>
+        <textarea name="address" id="address" placeholder="Delivery Address"></textarea>
+      </div>
+      
+      <div data-role="fieldcontain">
+        <label for="orderType">Order Type:</label>
+        <select name="orderType" id="orderType">
+          <option value="delivery">Delivery</option>
+          <option value="pickup">Pickup</option>
+        </select>
+      </div>
+      
+      <div data-role="fieldcontain">
+        <label for="orderDetails">Order Details:</label>
+        <textarea name="orderDetails" id="orderDetails" placeholder="What would you like to order?" required></textarea>
+      </div>
+      
+      <div data-role="fieldcontain">
+        <label for="specialInstructions">Special Instructions:</label>
+        <textarea name="specialInstructions" id="specialInstructions" placeholder="Any special requests?"></textarea>
+      </div>
+      
+      <button type="submit" data-theme="b">Submit Order</button>
+    </form>
+  </div>
+  
+  <div class="content-block">
+    <h3>Our Location</h3>
+    <p>85 Mineola Blvd<br>Mineola, NY 11501<br>United States</p>
+    <div class="map-container">
+      <img src="images/map.png" alt="Map" class="map-img">
+    </div>
+    <p>Email: info@taglios.com<br>Phone: 555-123-4567</p>
+  </div>
+</div>
+
+<div data-role="footer" data-position="fixed" class="pizza-footer">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home" data-icon="home">Home</a></li>
+      <li><a href="#menu" data-icon="grid">Menu</a></li>
+      <li><a href="#about" data-icon="info">About</a></li>
+      <li><a href="#contact" data-icon="mail" class="ui-btn-active">Contact</a></li>
+    </ul>
+  </div>
+</div>
